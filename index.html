@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HRSD Appraisal System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>HRSD Performance Appraisal</h1>
+    <p>Goal Setting & Evaluation Portal</p>
+</header>
+
+<div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+</div>
+
+<div class="card">
+    <form id="appraisalForm">
+
+        <section>
+            <h2>👤 Employee Information</h2>
+            <input type="text" id="name" placeholder="Employee Name" required>
+            <input type="text" id="empId" placeholder="Employee ID" required>
+            <input type="text" id="dept" placeholder="Department" required>
+        </section>
+
+        <section>
+            <h2>🎯 Goal Setting</h2>
+            <textarea id="goal1" placeholder="Primary Goal" required></textarea>
+            <textarea id="goal2" placeholder="Secondary Goal"></textarea>
+            <textarea id="goal3" placeholder="Additional Goal"></textarea>
+        </section>
+
+        <section>
+            <h2>📝 Self Appraisal</h2>
+            <textarea id="achievements" placeholder="Major Achievements" required></textarea>
+            <textarea id="challenges" placeholder="Challenges Faced"></textarea>
+
+            <select id="selfRating" required>
+                <option value="">Self Rating</option>
+                <option>Excellent</option>
+                <option>Very Good</option>
+                <option>Good</option>
+                <option>Average</option>
+                <option>Needs Improvement</option>
+            </select>
+        </section>
+
+        <section>
+            <h2>🧑‍💼 Manager Review</h2>
+            <textarea id="managerComments" placeholder="Manager Comments"></textarea>
+
+            <select id="finalRating" required>
+                <option value="">Final Rating</option>
+                <option>Excellent</option>
+                <option>Very Good</option>
+                <option>Good</option>
+                <option>Average</option>
+                <option>Needs Improvement</option>
+            </select>
+        </section>
+
+        <button type="submit">Submit Appraisal</button>
+    </form>
+
+    <p id="message"></p>
+</div>
+
+<footer>
+    © 2025 HRSD Appraisal System
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
